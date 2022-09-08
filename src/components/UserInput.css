@@ -1,0 +1,25 @@
+.containerStyle{
+    padding : 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tagBoxStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin : 0 auto;
+}
+.tagStyle{
+    width : 200px;
+    background-color: #FFC4C4;
+    padding: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.graphStyle{
+    display: flex;
+    align-content: flex-end;
+}
