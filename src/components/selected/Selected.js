@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import {Chart} from "react-google-charts";
 import "styled-components/macro";
 import { Wrapper } from "./styles";
@@ -19,7 +19,10 @@ function Selected({ data, setFlag }) {
 
   return (
     <div style={boxStyle} >
-      
+      <div style={{ display : "flex", flexDirection : "row", margin : "10px"}}>
+        <Form.Control disabled style={{width : "500px", marginRight : "10px"}} value={data.tag}/>
+        <Button variant="secondary" onClick={() => setFlag(false)}> Back </Button>
+      </div>
         {/* <p>{data.tag}</p>
         {
           data.rating_array.map((el, index)=>(
@@ -27,11 +30,10 @@ function Selected({ data, setFlag }) {
           ))
         } */}
         {/* <Button variant="alert" onClick={()=> setFlag(false)}> GO BACK! </Button> */}
-        <Button style={{margin:"10px"}} variant="secondary" onClick={() => setFlag(false)}> Back </Button>
         <Chart
           style={{
-            minWidth : "40vw",
-            maxWidth : "80vw"
+            minWidth : "30vw",
+            maxWidth : "75vw"
           }}
           chartType="Bar"
           width="100%"

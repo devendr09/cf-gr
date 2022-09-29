@@ -7,9 +7,7 @@
 }
 
 .tagBoxStyle{
-    flex-basis: 20vw;
-    /* align-content: flex-start; */
-    /* margin-right: 100px; */
+    flex-basis: 15vw;
 }
 .tagStyle{
     width : 200px;
@@ -19,8 +17,6 @@
 }
 
 .graphStyle{
+    flex-basis: 80vw;
     max-width: 80vw;
-}
-@keyframes  anim{
-    
 }

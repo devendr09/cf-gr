@@ -7,11 +7,7 @@ import { Button, Container, Form } from "react-bootstrap";
 
 export default function UserInput() {
 
-  const inputStyle = {
-    marginBottom: "40px",
-  };
-
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("devendr2609");
   const [userData, setUserData] = useState([]);
   const [selected, setSelected] = useState(0);
   const [flag, setFlag] = useState(false);
@@ -83,7 +79,6 @@ export default function UserInput() {
   console.log("Hello")
   return (
     <div>
-      {/* <div style={inputStyle}> */}
       <Form>
         <Form.Control  placeholder="Enter Codeforces Username" style={{display : "inline", width : "40%", marginRight : "10px"}} type="text" onChange={handleChange} value={input} />
         <Button
@@ -94,7 +89,6 @@ export default function UserInput() {
           Submit
         </Button>
       </Form>
-      {/* </div> */}
       <div className="containerStyle" style={{justifyContent : flag ? "space-evenly" : "center"}}>
         {flag ? (
           <div className="graphStyle">
