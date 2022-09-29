@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cf-gr/static/css/main.831e7525.css",
-    "main.js": "/cf-gr/static/js/main.14c5647d.js",
+    "main.js": "/cf-gr/static/js/main.fbcbce6d.js",
     "index.html": "/cf-gr/index.html",
     "main.831e7525.css.map": "/cf-gr/static/css/main.831e7525.css.map",
-    "main.14c5647d.js.map": "/cf-gr/static/js/main.14c5647d.js.map"
+    "main.fbcbce6d.js.map": "/cf-gr/static/js/main.fbcbce6d.js.map"
   },
   "entrypoints": [
     "static/css/main.831e7525.css",
-    "static/js/main.14c5647d.js"
+    "static/js/main.fbcbce6d.js"
   ]
 }
