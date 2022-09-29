@@ -80,12 +80,12 @@ export default function UserInput() {
     setFlag(true);
     setSelected(index);
   }
-
+  console.log("Hello")
   return (
     <div>
       {/* <div style={inputStyle}> */}
-      <Form style={{ width: "50%" }}>
-        <Form.Control type="text" onChange={handleChange} value={input} />
+      <Form>
+        <Form.Control style={{display : "inline", width : "40%", marginRight : "10px"}} type="text" onChange={handleChange} value={input} />
         <Button
           variant="primary"
           disabled={!input.length}
@@ -95,7 +95,7 @@ export default function UserInput() {
         </Button>
       </Form>
       {/* </div> */}
-      <div className="containerStyle">
+      <div className="containerStyle" style={{justifyContent : flag ? "space-evenly" : "center"}}>
         {flag ? (
           <div className="graphStyle">
             <Selected
