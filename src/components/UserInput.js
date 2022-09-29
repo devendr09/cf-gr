@@ -11,7 +11,7 @@ export default function UserInput() {
     marginBottom: "40px",
   };
 
-  const [input, setInput] = useState("optim");
+  const [input, setInput] = useState("");
   const [userData, setUserData] = useState([]);
   const [selected, setSelected] = useState(0);
   const [flag, setFlag] = useState(false);
@@ -85,7 +85,7 @@ export default function UserInput() {
     <div>
       {/* <div style={inputStyle}> */}
       <Form>
-        <Form.Control style={{display : "inline", width : "40%", marginRight : "10px"}} type="text" onChange={handleChange} value={input} />
+        <Form.Control  placeholder="Enter Codeforces Username" style={{display : "inline", width : "40%", marginRight : "10px"}} type="text" onChange={handleChange} value={input} />
         <Button
           variant="primary"
           disabled={!input.length}
