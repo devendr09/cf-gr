@@ -7,7 +7,7 @@ import { Button, Container, Form } from "react-bootstrap";
 
 export default function UserInput() {
 
-  const [input, setInput] = useState("devendr2609");
+  const [input, setInput] = useState("");
   const [userData, setUserData] = useState([]);
   const [selected, setSelected] = useState(0);
   const [flag, setFlag] = useState(false);
