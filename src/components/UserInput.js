@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Selected from "./selected/Selected";
 import "./UserInput.css";
-import "styled-components/macro";
 import { Button, Form } from "react-bootstrap";
 
 export default function UserInput() {
