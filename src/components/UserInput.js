@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Selected from "./selected/Selected";
 import "./UserInput.css";
 import "styled-components/macro";
-import { Button, Container, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 export default function UserInput() {
 
@@ -35,7 +35,7 @@ export default function UserInput() {
         var qtype = res.data.result[i].problem.index;
         let key = { a: contestID, b: qtype };
 
-        if (tag_length === 0 || rating === undefined || verdict !== "OK")
+        if (tag_length === 0 || rating === undefined || rating === "undefined" || verdict !== "OK")
           continue;
         if (st.has(key)) continue;
         st.add(key);
