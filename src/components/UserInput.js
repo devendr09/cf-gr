@@ -67,7 +67,10 @@ export default function UserInput() {
       }
       console.log(user_array);
       setUserData(user_array);
-    } catch (error) {}
+    } catch (error) {
+      console.log('Error occured')
+      console.log(error)
+    }
   }
 
   function handleTagClick(e, index) {
